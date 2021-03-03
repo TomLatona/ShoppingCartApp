@@ -5,8 +5,8 @@ public class ItemOrder {
 	int quantity;
 	
 	public ItemOrder(Item item, int quantity) {
-		item = this.item;
-		quantity = this.quantity;
+		this.item = item;
+		this.quantity = quantity;
 	}
 	
 	public double getPrice() {

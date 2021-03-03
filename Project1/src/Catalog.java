@@ -6,7 +6,7 @@ public class Catalog {
 	ArrayList<Item> list = new ArrayList<Item>();
 	
 	public Catalog(String name) {
-		name = this.name;
+		this.name = name;
 	}
 	
 	public void add(Item item) {
