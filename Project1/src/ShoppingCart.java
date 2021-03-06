@@ -9,14 +9,15 @@ public class ShoppingCart {
 		 this.cart = cart;
 	}
 	
-	public void add(ItemOrder order) { //not finished yet
-		//remove previous quantity input so that if user erases number 
-		//and inputs new quantity it doesn't add them
+	public void add(ItemOrder order) { 
 		
-		if(cart.contains(order)) {
-			cart.remove(order);
-		}
 		cart.add(order);
+		
+		for(int i = 0; i < cart.size()-1; i++) {
+            if(order.getItem() == (cart.get(i).getItem())) {
+                cart.remove(i);
+            }
+        }
 	}
 	
 	public void setDiscount(boolean value) {
